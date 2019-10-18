@@ -1,2 +1,2 @@
-include ':app', ':ok3lib'
-rootProject.name='ok3logapp'
+include ':app', ':retrofit-html'
+rootProject.name='retrofit-html'

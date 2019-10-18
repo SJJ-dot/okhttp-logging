@@ -1,4 +1,4 @@
-package com.sjianjun.ok3lib;
+package com.sjianjun.retrofit.html;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -23,8 +23,8 @@ import okhttp3.internal.Util;
 import okio.BufferedSource;
 import retrofit2.Converter;
 import retrofit2.Retrofit;
-import com.sjianjun.ok3lib.ann.Html;
-import com.sjianjun.ok3lib.charset.CharsetDetector;
+import com.sjianjun.retrofit.html.ann.Html;
+import com.sjianjun.retrofit.html.charset.CharsetDetector;
 
 public class HtmlEncodeConverter extends Converter.Factory {
     private Gson gson;

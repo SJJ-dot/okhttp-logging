@@ -1,6 +1,6 @@
-package com.sjianjun.ok3lib.interceptor;
+package com.sjianjun.retrofit.html.interceptor;
 
-import com.sjianjun.ok3lib.charset.CharsetDetector;
+import com.sjianjun.retrofit.html.charset.CharsetDetector;
 
 import org.jetbrains.annotations.Nullable;
 import org.jsoup.Jsoup;
@@ -11,7 +11,6 @@ import org.jsoup.select.Elements;
 import java.io.EOFException;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.Connection;

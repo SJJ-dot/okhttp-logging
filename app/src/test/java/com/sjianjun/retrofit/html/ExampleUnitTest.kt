@@ -1,4 +1,4 @@
-package com.sjianjun.ok3logapp
+package com.sjianjun.retrofit.html
 
 import org.junit.Test
 
