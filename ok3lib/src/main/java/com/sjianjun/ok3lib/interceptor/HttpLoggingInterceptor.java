@@ -302,7 +302,7 @@ public final class HttpLoggingInterceptor implements Interceptor {
         }
         //根据meta判断
         byte[] headerBytes = buffer.readByteArray(Math.min(buffer.size(), 1024));
-        Document doc = Jsoup.parse(new String(headerBytes, StandardCharsets.UTF_8));
+        Document doc = Jsoup.parse(new String(headerBytes, Charset.forName("UTF-8")));
         Elements metaTags = doc.getElementsByTag("meta");
         for (Element metaTag : metaTags) {
             String content = metaTag.attr("content");
