@@ -1,2 +1,2 @@
-include ':app', ':retrofit-html'
-rootProject.name='retrofit-html'
+include ':app', ':okhttp-logging'
+rootProject.name='okhttp-logging'

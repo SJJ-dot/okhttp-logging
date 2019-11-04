@@ -11,11 +11,6 @@ buildscript {
     }
 }
 
-//repositories {
-//    maven {
-//        url "https://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/"
-//    }
-//}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -33,9 +28,9 @@ targetCompatibility = "8"
 publish {
     userOrg = 'sjianjun'
     groupId = 'com.sjianjun'
-    artifactId = 'retrofit-html'
+    artifactId = 'okhttp-logging'
     publishVersion = '0.0.1'
-    desc = 'retrofit suport html charset'
-    website = 'https://github.com/lTBeL/RetrofitLib'
+    desc = 'okhttp logging .'
+    website = 'https://github.com/lTBeL/okhttp-logging'
 //    $ gradlew clean build :bintrayUpload -PbintrayUser=sjianjun -PbintrayKey=PbintrayKey -PdryRun=false
 }
