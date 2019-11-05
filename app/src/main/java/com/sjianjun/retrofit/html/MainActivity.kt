@@ -3,6 +3,7 @@ package com.sjianjun.retrofit.html
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.sjianjun.retrofit.converter.GsonCharsetCompatibleConverter
 import com.sjianjun.retrofit.html.interceptor.HttpLoggingInterceptor
 import com.sjianjun.scheduler.CoroutineScheduler
 import io.reactivex.Observable
@@ -34,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                     }.setLevel(HttpLoggingInterceptor.Level.BODY))
                     .build()
             )
-            .addConverterFactory(ScalarsConverterFactory.create())
+            .addConverterFactory(GsonCharsetCompatibleConverter.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(CoroutineScheduler.IO))
             .build()
 
