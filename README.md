@@ -44,3 +44,18 @@ dependencies {
         .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(CoroutineScheduler.IO))
         .build()
 ```
+
+# 字符集检测
+网上copy的代码。具体来源已经忘记了。主要使用的第三方的jar包
+- 添加存储库**同上**
+- 添加依赖
+```groovy
+dependencies {
+    ...
+    implementation 'com.sjianjun:charset-detector:0.0.1'
+}
+```
+- 代码中
+```
+String charsetStr = CharsetDetector.detectCharset(buffer.inputStream());
+```
