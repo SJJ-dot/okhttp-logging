@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
                     .build()
             )
             .addConverterFactory(ScalarsConverterFactory.create())
-            .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(CoroutineScheduler.IO))
             .build()
 

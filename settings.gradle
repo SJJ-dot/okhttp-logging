@@ -1,2 +1,2 @@
-include ':app', ':okhttp-logging'
+include ':app', ':okhttp-logging', ':charset-detector'
 rootProject.name='okhttp-logging'

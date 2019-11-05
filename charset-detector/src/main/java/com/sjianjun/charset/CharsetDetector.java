@@ -1,4 +1,4 @@
-package com.sjianjun.retrofit.html.charset;
+package com.sjianjun.charset;
 
 import org.mozilla.intl.chardet.nsDetector;
 

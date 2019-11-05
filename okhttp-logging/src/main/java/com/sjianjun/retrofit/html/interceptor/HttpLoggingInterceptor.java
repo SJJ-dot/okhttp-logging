@@ -1,6 +1,6 @@
 package com.sjianjun.retrofit.html.interceptor;
 
-import com.sjianjun.retrofit.html.charset.CharsetDetector;
+import com.sjianjun.charset.CharsetDetector;
 
 import org.jetbrains.annotations.Nullable;
 import org.jsoup.Jsoup;
