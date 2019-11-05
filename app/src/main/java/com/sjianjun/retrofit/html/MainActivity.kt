@@ -4,14 +4,12 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.sjianjun.retrofit.converter.GsonCharsetCompatibleConverter
-import com.sjianjun.retrofit.html.interceptor.HttpLoggingInterceptor
+import com.sjianjun.okhttp3.interceptor.HttpLoggingInterceptor
 import com.sjianjun.scheduler.CoroutineScheduler
 import io.reactivex.Observable
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
-import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.http.GET
 import sjj.alog.Log
 import java.util.concurrent.TimeUnit

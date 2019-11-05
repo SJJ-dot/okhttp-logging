@@ -1,4 +1,4 @@
-package com.sjianjun.retrofit.html.interceptor;
+package com.sjianjun.okhttp3.interceptor;
 
 import com.sjianjun.charset.CharsetDetector;
 
