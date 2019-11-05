@@ -59,3 +59,21 @@ dependencies {
 ```
 String charsetStr = CharsetDetector.detectCharset(buffer.inputStream());
 ```
+
+# retrofit类型转换
+- 添加存储库**同上**
+- 添加依赖
+```groovy
+dependencies {
+    ...
+    implementation 'com.sjianjun:retrofit-converter:0.0.1'
+    //...
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+}
+```
+- 代码中
+```
+    val test = Retrofit.Builder()
+        .addConverterFactory(GsonCharsetCompatibleConverter.create())
+```
