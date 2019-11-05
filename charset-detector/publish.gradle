@@ -1,6 +1,12 @@
 apply plugin: 'maven'
 
-
+task sourceJar(type: Jar) {
+    getArchiveClassifier().set('sources')
+    from sourceSets.main.java.srcDirs
+}
+artifacts {
+    archives sourceJar
+}
 
 uploadArchives {
     repositories.mavenDeployer {

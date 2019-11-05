@@ -23,8 +23,9 @@ import okhttp3.internal.Util;
 import okio.BufferedSource;
 import retrofit2.Converter;
 import retrofit2.Retrofit;
+
+import com.sjianjun.charset.CharsetDetector;
 import com.sjianjun.retrofit.html.ann.Html;
-import com.sjianjun.retrofit.html.charset.CharsetDetector;
 
 public class HtmlEncodeConverter extends Converter.Factory {
     private Gson gson;
@@ -82,7 +83,7 @@ public class HtmlEncodeConverter extends Converter.Factory {
         }
         //根据meta判断
         byte[] headerBytes = Arrays.copyOfRange(responseBytes, 0, Math.min(responseBytes.length,1024));
-        Document doc = Jsoup.parse(new String(headerBytes, StandardCharsets.UTF_8));
+        Document doc = Jsoup.parse(new String(headerBytes, Charset.forName("UTF-8")));
         Elements metaTags = doc.getElementsByTag("meta");
         for (Element metaTag : metaTags) {
             String content = metaTag.attr("content");
