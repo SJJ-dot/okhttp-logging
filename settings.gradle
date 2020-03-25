@@ -1,2 +1,2 @@
 include ':app', ':okhttp-logging', ':charset-detector', ':retrofit-converter'
-rootProject.name='okhttp-logging'
+rootProject.name='retrofit-ext'
