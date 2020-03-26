@@ -14,5 +14,3 @@ dependencies {
 
 sourceCompatibility = "8"
 targetCompatibility = "8"
-
-apply from: new File(rootDir,"publish.gradle")
