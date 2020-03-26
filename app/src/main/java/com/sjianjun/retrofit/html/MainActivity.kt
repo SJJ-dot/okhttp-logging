@@ -3,10 +3,10 @@ package com.sjianjun.retrofit.html
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.sjianjun.retrofit.converter.GsonCharsetCompatibleConverter
 import com.sjianjun.okhttp3.interceptor.HttpLoggingInterceptor
-import com.sjianjun.scheduler.CoroutineScheduler
+import com.sjianjun.retrofit.converter.GsonCharsetCompatibleConverter
 import io.reactivex.Observable
+import io.reactivex.schedulers.Schedulers
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                     .build()
             )
             .addConverterFactory(GsonCharsetCompatibleConverter.create())
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(CoroutineScheduler.IO))
+            .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(Schedulers.io()))
             .build()
 
             .create(Test::class.java)

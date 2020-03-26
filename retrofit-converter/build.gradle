@@ -3,7 +3,8 @@ apply plugin: 'java-library'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'org.jsoup:jsoup:1.11.3'
-    implementation 'com.sjianjun:charset-detector:0.0.1'
+//    implementation 'com.sjianjun:charset-detector:0.0.1'
+    implementation project(":charset-detector")
 
     compileOnly 'com.squareup.retrofit2:retrofit:2.6.1'
     compileOnly 'com.google.code.gson:gson:2.8.6'

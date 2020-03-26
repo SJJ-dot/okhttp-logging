@@ -8,8 +8,8 @@ dependencies {
     compileOnly 'com.google.code.gson:gson:2.8.6'
 //    implementation 'org.mozilla.intl:chardet:1.0'
     implementation 'org.jsoup:jsoup:1.11.3'
-    implementation 'com.sjianjun.ext:chardet:0.0.1'
-    implementation 'com.sjianjun:charset-detector:0.0.1'
+
+    implementation project(":charset-detector")
 }
 
 sourceCompatibility = "8"

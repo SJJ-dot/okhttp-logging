@@ -19,11 +19,11 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven {
-//            https://raw.githubusercontent.com/{username}/{projeceName}/{branch}
-            url "https://raw.githubusercontent.com/lTBeL/repo/master/repository"
-//            url new File(rootDir, "repository").toURI()
-        }
+//        maven {
+////            https://raw.githubusercontent.com/{username}/{projeceName}/{branch}
+//            url "https://raw.githubusercontent.com/lTBeL/repo/master/repository"
+////            url new File(rootDir, "repository").toURI()
+//        }
     }
     tasks.withType(Javadoc) {
         options.addStringOption('Xdoclint:none', '-quiet')
