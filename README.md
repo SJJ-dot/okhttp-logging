@@ -45,6 +45,16 @@ dependencies {
 - 添加存储库**同上**
 - 添加依赖
 ```groovy
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+			 maven {
+            url "https://raw.githubusercontent.com/SJJ-dot/repo/master/"
+        }
+		}
+	}
+
 dependencies {
     ...
     implementation "com.github.SJJ-dot.retrofit-ext:charset-detector:tag"
