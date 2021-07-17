@@ -7,9 +7,9 @@ dependencies {
     compileOnly 'com.squareup.retrofit2:retrofit:2.6.1'
     compileOnly 'com.google.code.gson:gson:2.8.6'
 //    implementation 'org.mozilla.intl:chardet:1.0'
-    implementation 'org.jsoup:jsoup:1.11.3'
+    implementation 'org.jsoup:jsoup:1.13.1'
 
-    implementation project(":charset-detector")
+    compileOnly project(":charset-detector")
 }
 
 sourceCompatibility = "8"

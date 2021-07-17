@@ -2,6 +2,7 @@ apply plugin: 'java-library'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.sjianjun.ext:chardet:0.0.1'
 }
 
 sourceCompatibility = "8"

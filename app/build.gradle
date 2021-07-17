@@ -53,7 +53,10 @@ dependencies {
 
 
     implementation project(":okhttp-logging")
+    implementation project(":charset-detector")
     implementation project(":retrofit-converter")
 
-    implementation "com.github.SJJ-dot.retrofit-ext:charset-detector:master-SNAPSHOT"
+//    implementation "com.github.SJJ-dot.retrofit-ext:charset-detector:1.0.0"
+//    implementation "com.github.SJJ-dot.retrofit-ext:okhttp-logging:1.0.0"
+//    implementation "com.github.SJJ-dot.retrofit-ext:retrofit-converter:1.0.0"
 }

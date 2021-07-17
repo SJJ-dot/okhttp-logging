@@ -7,6 +7,7 @@ import com.sjianjun.okhttp3.interceptor.HttpLoggingInterceptor
 import com.sjianjun.retrofit.converter.GsonCharsetCompatibleConverter
 import io.reactivex.Observable
 import io.reactivex.schedulers.Schedulers
+import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
@@ -38,12 +39,15 @@ class MainActivity : AppCompatActivity() {
             .build()
 
             .create(Test::class.java)
-        val html = test.html()
-        html.subscribe({
-            Log.e(it)
-        }, {
-            Log.e("error", it)
-        })
+        hello.setOnClickListener {
+            val html = test.html()
+            html.subscribe({
+                Log.e(it)
+            }, {
+                Log.e("error", it)
+            })
+        }
+
     }
 
     interface Test {
