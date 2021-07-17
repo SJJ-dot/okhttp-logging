@@ -7,3 +7,13 @@ dependencies {
 
 sourceCompatibility = "8"
 targetCompatibility = "8"
+
+apply plugin: 'maven'
+
+task sourceJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.java.srcDirs
+}
+artifacts {
+    archives sourceJar
+}
